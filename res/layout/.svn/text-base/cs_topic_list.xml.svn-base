@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cs_recommend_bg"
+    android:orientation="vertical" >
+
+    <com.voole.epg.base.LogoViewTcl
+        android:id="@+id/topic_logo"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="6" />
+
+    <com.voole.epg.view.movies.topic.TopicListView
+        xmlns:epg="http://schemas.android.com/apk/res/com.voole.epgfor4k"
+        android:id="@+id/topic_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="60"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        epg:itemSize="10" />
+    <!-- android:layout_weight="3" -->
+
+    <com.voole.epg.base.common.PageIconNavigator
+        android:id="@+id/topic_list_page"
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="6"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

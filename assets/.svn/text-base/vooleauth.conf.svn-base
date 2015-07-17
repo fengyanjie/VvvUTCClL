@@ -1,0 +1,11 @@
+
+  
+  	oemid = "200018"
+
+    auth_code = "45:5?@<:A9>EA?BABLOMDMIJMRMMMQVP"
+    
+    
+    write_ts_to_disk = 1
+
+	udisk_root_dir = "/mnt/usb/voole_video"
+    

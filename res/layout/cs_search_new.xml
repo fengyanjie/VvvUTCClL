@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.voole.epg.base.LogoViewTcl
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="32" />
+
+    <com.voole.epg.view.newsearch.TabView
+        android:id="@+id/tabView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="31" />
+
+    <LinearLayout
+        android:id="@+id/ll_searchLeft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="21"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="415" />
+
+        <com.voole.epg.view.newsearch.KeyboardView
+            android:id="@+id/keyboardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="120" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="415" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_searchRight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="21"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="415" />
+
+        <com.voole.epg.view.newsearch.FindCatView
+            android:id="@+id/findCatView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="120" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="415" />
+    </LinearLayout>
+
+    <com.voole.epg.view.movies.detail.SingleLineMovieView
+        xmlns:epg="http://schemas.android.com/apk/res/com.voole.epgfor4k"
+        android:id="@+id/search_movieView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_weight="24"
+        epg:imgWeight="16"
+        epg:itemSize="6"
+        epg:textSize="24"
+        epg:textWeight="84" />
+
+    <com.voole.epg.view.newsearch.ConditionView
+        android:id="@+id/condition"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="32" />
+
+</LinearLayout>

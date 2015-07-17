@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.voole.epg.base.LogoViewTcl
+        android:id="@+id/topic_logo"
+        android:layout_width="match_parent"
+        android:paddingBottom="3dp"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        />
+ <!-- android:layout_weight="14" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+         android:layout_height="match_parent"
+        android:layout_weight="6"
+         />
+
+    <LinearLayout
+        android:id="@+id/topic_list_layout"
+        android:layout_width="match_parent"
+        android:layout_weight="5"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.voole.epg.view.movies.detail.SingleLineMovieView
+            xmlns:epg="http://schemas.android.com/apk/res/com.voole.epgfor4k"
+            android:id="@+id/topic_list"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="26"
+            epg:imgWeight="16"
+            epg:itemSize="6"
+            epg:textSize="24"
+            epg:textWeight="84" />
+
+        <com.voole.epg.base.common.PageIconNavigator
+            android:id="@+id/topic_page"
+            android:layout_width="wrap_content"
+            android:layout_height="0px"
+            android:layout_weight="6"
+            android:layout_gravity="center_horizontal" />
+ <!-- android:layout_weight="3" -->
+
+    </LinearLayout>
+
+</LinearLayout>

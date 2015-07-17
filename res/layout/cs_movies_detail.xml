@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cs_recommend_bg"
+    android:orientation="vertical" >
+
+    <com.voole.epg.base.LogoViewTcl
+        android:id="@+id/detail_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="92" />
+
+    <com.voole.epg.view.movies.detail.MovieDetailView
+        android:id="@+id/detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="35" />
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="73" >
+
+        <com.voole.epg.view.movies.detail.SingleLineMovieView
+            xmlns:epg="http://schemas.android.com/apk/res/com.voole.epgfor4k"
+            android:id="@+id/detail_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="5dp"
+            epg:displayArrow="false"
+            epg:itemSize="8" 
+            epg:textSize="19"
+            epg:imgWeight="18"
+            epg:textWeight="82"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="80dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+            <com.voole.epg.base.common.NumberNavigator
+                android:id="@+id/detail_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

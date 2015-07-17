@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.voole.epgfor4k"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.voole.epg.base.LogoViewTcl
+        android:id="@+id/topic_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="87"
+        android:paddingBottom="3dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-12dp"
+        android:layout_weight="13"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="55" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="45"
+            android:background="@drawable/cs_topci_film_hor_bg"
+            android:orientation="vertical"
+            android:paddingRight="30dp"
+            android:paddingTop="30dp" >
+
+            <com.voole.epg.view.movies.movie.MovieView
+                xmlns:epg="http://schemas.android.com/apk/res/com.voole.epgfor4k"
+                android:id="@+id/movie_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                epg:itemSize="6" />
+            <!-- android:layout_weight="3" -->
+
+            <com.voole.epg.base.common.PageIconNavigator
+                android:id="@+id/topic_page"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="49" />
+            <!-- android:layout_weight="3" -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

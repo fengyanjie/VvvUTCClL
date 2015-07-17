@@ -1,0 +1,52 @@
+﻿@charset "utf-8";
+html{overflow-y:hidden; overflow-x:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+img, div, input, a  {behavior:url("blur.htc");}
+body {
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+	background-color:#0a0c0d;
+	font-family:'黑体';
+	color:#939393;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+ul {
+	margin:0px;
+	padding:0px;
+}
+ul li {
+	float:left;
+	list-style:none;
+}
+a img {
+	border:0px;
+}
+a:focus { outline:none;}
+a {
+	text-decoration:none;display:block;
+}
+p {
+	margin:0px;
+	padding:0px;
+}
+
+/*----------加载动画的位置----------*/
+#loading { position:absolute;top:300px;left:600px;z-index:9999;}
+
+#box{
+	width:1920px;
+	height:1080px;
+	overflow:hidden;
+	position:relative;
+	background-image:url(images/splash.jpg);
+}
+#box span{
+	font-size:45px;
+	color:#e8340c;
+	text-align:center;
+	width:100%;
+	line-height:60px;
+	position:relative;
+	display:block;
+	top:940px;
+}

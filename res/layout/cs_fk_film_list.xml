@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:gravity="center_vertical|left"
+        android:paddingBottom="3dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/cs_fk_list_logo" />
+
+        <Button
+            android:id="@+id/ck_fk_button_downManger"
+            android:layout_alignParentRight="true"
+            android:layout_width="160dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_height="60dip"
+            android:background="@drawable/bg_f4k_down_button" />
+    </RelativeLayout>
+
+    <!-- android:layout_weight="14" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6" />
+
+
+    <LinearLayout
+        android:id="@+id/topic_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <com.voole.epg.view.movies.detail.SingleLineMovieView
+            xmlns:epg="http://schemas.android.com/apk/res/com.voole.epgfor4k"
+            android:id="@+id/film_list"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_marginTop="20dp"
+            android:layout_weight="26"
+            epg:imgWeight="16"
+            epg:itemSize="6"
+            epg:textSize="24"
+            epg:textWeight="84" />
+
+        <com.voole.epg.base.common.PageIconNavigator
+            android:id="@+id/topic_page"
+            android:layout_width="wrap_content"
+            android:layout_height="0px"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="6" />
+
+        <!-- android:layout_weight="3" -->
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+.error{
+	margin-top:256px;
+	height:163px;
+	min-height:163px;
+	margin:258px auto 0;
+	background:url(images/error.png) 0 0 no-repeat;
+	padding-left:165px;
+	padding-top:22px;
+	font-size:30px;
+	line-height:38px;
+	color:#fff;
+	display:block;
+}
+.error span{
+	text-align:left;
+	display:inline-block;
+	margin:0 auto;
+	width:auto;
+}
+
+.btnCon{
+	width:133px;
+	height:58px;
+	margin:16px auto 0;
+	position:relative;
+}
+
+.btnSpace{
+	width:300px;
+	height:58px;
+	margin-left:-68px;
+	text-align:center;
+}
+
+.errorBtn{
+	width:133px;
+	height:58px;
+	line-height:58px;
+	background:url(images/errorBtn.png) center 0 no-repeat;
+	font-size:24px;
+	text-align:center;
+	display:inline-block;
+	color:#A5978D;
+}
+
+.errorBtna{
+	width:133px;
+	height:58px;
+	line-height:58px;
+	background:url(images/errorBtna.png) center 0 no-repeat;
+	font-size:24px;
+	text-align:center;
+	display:inline-block;
+	color:#fff;
+}

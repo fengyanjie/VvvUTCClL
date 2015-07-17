@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="zh-CN" http-equiv="Content-Language">
+<meta content="优朋影视 优朋普乐为电信运营商和广电运营商面向其PC、TV、Mobile等各种类型终端用户的数字娱乐平台提供高品质平台构建、运营支撑及内容输出服务。" name="description">
+<meta content="优朋影视,电影,电视剧,在线电影,在线电视剧,最新电影, 最新电视剧,voole.com" name="keywords">
+<meta content="优朋影视版权所有" name="Copyright">
+<meta content="www.voole.com,优朋影视" name="author">
+<title>优朋影视</title>
+<link type="text/css" rel="stylesheet" href="../style/voole/basic.css">
+<link type="text/css" rel="stylesheet" href="../style/voole/test.css">
+<script type="text/javascript" src="../style/voole/js/jquery-1.8.1.min.js"></script>
+<script src="../style/voole/js/ekey.js"></script>
+<script>
+Date.prototype.format=function(b){var c={"M+":this.getMonth()+1,"d+":this.getDate(),"h+":this.getHours(),"m+":this.getMinutes(),"s+":this.getSeconds(),"q+":Math.floor((this.getMonth()+3)/3),S:this.getMilliseconds()};if(/(y+)/.test(b)){b=b.replace(RegExp.$1,(this.getFullYear()+"").substr(4-RegExp.$1.length))}for(var a in c){if(new RegExp("("+a+")").test(b)){b=b.replace(RegExp.$1,RegExp.$1.length==1?c[a]:("00"+c[a]).substr((""+c[a]).length))}}return b};
+var DOMReady={scriptReady:false,domReady:false,run:null,isRuning:false,exec:function(){if(DOMReady.scriptReady&&DOMReady.domReady&&!DOMReady.isRuning){DOMReady.isRuning=true;DOMReady.run&&DOMReady.run()}},setScriptReady:function(){DOMReady.scriptReady=true;DOMReady.exec()},setDomReady:function(){DOMReady.domReady=true;DOMReady.exec()},ready:function(a){DOMReady.run=a}};(function(){var c=document,b=DOMReady.setDomReady;if(/complete/.test(c.readyState)){b()}else{if(c.addEventListener){if(/msie/i.test(navigator.userAgent)&&("interactive"==c.readyState)){b()}else{c.addEventListener("DOMContentLoaded",b,false)}}else{var a=function(){a=new Function();b()};(function(){try{c.body.doScroll("left")}catch(d){return setTimeout(arguments.callee,1)}a()}());c.attachEvent("onreadystatechange",function(){("complete"==c.readyState)&&a()})}}})();
+</script>
+</head>
+
+<body>
+<div id="box">
+<script>
+DOMReady.ready(function() {	
+	epgKeyManage.Render([["#btn_view"],["#list"]]);
+	var spanWidth = $(".error span").width();
+	epgkey.setKey(27, goBack);
+	$(".error").css("width",spanWidth);
+	Android.replace();
+	
+}) 
+function goBack() {
+	Android.exit(); 
+	return;
+}
+</script>
+  <div class="popUl" id="popUl">
+  	<div class="error" id="error">
+  		<span id="errorSpan">出错啦！优朋影视无法打开！</span>
+  	</div>
+    <div id="list"  cloumnTag="li" rowTag="dt" rep="a">
+      <ul>
+	    <dt><li class="f" ac="zhedie">网络状态检测........</li></dt>
+		<dl class="ttt"></dl>
+		<dt><li class="f" ac="zhedie">权限认证检测........</li></dt>
+		<dl class="ttt"></dl>
+    	<dt><li class="f" ac="zhedie">播放代理检测........ </li></dt>
+		<dl class="ttt"></dl>
+      </ul>
+    </div>
+    <div class="clearBoth"></div>
+  </div>
+  
+  <div class="btnCon" id="btn_view" cloumnTag="span" rowTag="div" rep="a" setfocus="" >
+    <div>
+      <span class="btn" oc="Android.repair()">修复</span>
+      <span class="btn" oc="Android.exit()">退出</span>
+    </div>
+    <p class="text">客服电话： 400-655-7899</p>
+  </div>
+</div>
+</body>
+</html>
+
+<script>
+DOMReady.setScriptReady();
+if ($('head>meta[http-equiv="Content-Type"]').length < 1) {
+    window.location.reload();
+};
+function repair(i,m){
+$('#box li.f').eq(i).html(m)
+};
+function replaceTitle(i,m){
+$('#box li.f').eq(i).html(m)
+};
+function replaceContent(i,m){
+$('#box dl.ttt').eq(i).html(m)
+};
+function zhedie(e){
+	e.parent().next(".ttt").toggle().siblings("#list ul .ttt").hide();
+	var c= 0;
+	$("#list ul .ttt").each(function(){
+    if($(this).css("display") == "none")
+    	c++;
+  	});
+  	
+  	if(c == $("#list ul .ttt").length){
+  		$("#error").show();
+  	}else{
+  		$("#error").hide();
+  	}
+}
+</script>

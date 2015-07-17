@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.voole.epgfor4k"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="45dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户ID："
+            android:textSize="27dp" />
+
+        <TextView
+            android:id="@+id/uid_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="27dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.voole.epg.view.mymagic.MoneyView
+            android:id="@+id/moneyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他金额:   ￥"
+            android:textSize="27dp" />
+
+        <com.voole.epg.base.common.InputText
+            android:id="@+id/number_et"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <com.voole.epg.base.common.ShadeButton
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp" />
+
+        <com.voole.epg.base.common.ShadeButton
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/cs_yes_no_bg"
+        android:lineSpacingExtra="3dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:singleLine="false"
+        android:text="本产品由支付宝和优朋普乐联合提供，可通过定额或输入金额两种方式完成支付宝账户为优朋影视充值。且手动输入金额最低为5元并必须为整数。为保障安全性，支付宝设定单笔交易额小于5元或当天累计交易额小于50元，由您的支付宝账户直接支付。否则，需通过手机验证码完成充值。充值成功后，请及时进入“个人中心-消费中心-我要订购”，订购包月、包年等服务，在您所订购服务的有效期内，您可观看优朋所有收费及免费影片。如有任何疑问，请拨打优朋影视24小时客服电话，服务热线：400-655-7899。"
+        android:textColor="#737373"
+        android:textSize="23dp" />
+
+</LinearLayout>

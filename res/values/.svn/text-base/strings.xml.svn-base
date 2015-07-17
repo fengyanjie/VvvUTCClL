@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">4K影院</string>
+    
+    <!-- search label -->
+    <string name="search_label">优朋影视</string>
+    <string name="search_hint">例如：搜索“画皮2”，请输入“HP2”</string>
+	<string name="settings_description">Voole Definitions of words</string>
+
+    <!-- Logo View -->
+    <string name="logo_account">个人中心</string>
+    <string name="logo_recharge">充值订购</string>
+    <string name="logo_history">观看记录</string>
+    <string name="logo_favorite">收藏</string>
+    <string name="logo_search">搜索</string>
+
+    <!-- Movie Navigator View -->
+    <string name="movie_navigator_ye">页</string>
+    <string name="movie_navigator_goto">跳到</string>
+    <string name="movie_navigator_next">下一页</string>
+    <string name="movie_navigator_pre">上一页</string>
+    <string name="movie_navigator_input_fail">您输入的页数超过范围，请重新输入！</string>
+
+    <!-- Movie channel navigation View -->
+    <string name="movie_channel_qidai">敬请期待</string>
+
+    <!-- Movie View -->
+    <string name="movie_zuyan">主演：</string>
+    <string name="movie_longtime">分钟</string>
+    <string name="movie_get_film_fail">您好，网络故障，请重试！</string>
+     <string name="movie_get_search_fail">分类检索未找到符合条件的节目！</string>
+    <!-- Movie Detail -->
+	<string name="movie_detail_checkinfo_fail">获取信息失败</string>
+	<string name="movie_detail_film_fail">获取影片信息失败，请重试</string>
+	<string name="movie_detail_order_service">您已订购?，可在*前免费观看</string>
+	<string name="movie_detail_order_single">您已订购本片，可以?前无限次免费观看</string>
+	<string name="movie_detail_balance_not_enough">当前余额?元，余额不足，请充值，如需购买充值卡，请拨打优朋影视7x24 小时服务热线400-655-7899或登陆优朋影视官方服务网址：dk.voole.com</string>
+    <!-- MyMagic -->
+    <string name="mymagic_logo_text">我的优朋</string>
+    <string name="mymagic_favorite_edit">编辑</string>
+    <string name="mymagic_favorite_delete">删除</string>
+    <string name="mymagic_favorite_clean">清空</string>
+    <string name="mymagic_favorite_cancle">取消</string> 
+    <string name="mymagic_um_register">注        册</string>
+    <string name="mymagic_um_userinfo">账户信息</string>
+    <string name="mymagic_um_reset_password">密码重置</string>
+    <string name="mymagic_um_register_username">用&#160;&#160;户&#160;&#160;名&#160;:&#160;</string>
+    <string name="mymagic_um_register_username_tip">&#160;&#160;5-20英文字母或者数字，不区分大小写</string>
+    <string name="mymagic_um_register_email">邮箱地址&#160;:&#160;</string>
+    <string name="mymagic_um_register_email_tip">&#160;&#160;请输入您的真实有效邮箱</string>
+    <string name="mymagic_um_register_pwd">输入密码&#160;:&#160;</string>
+    <string name="mymagic_um_register_pwd_tip">&#160;&#160;6-20英文字母或数字，区分大小写</string>
+    <string name="mymagic_um_register_compwd">确认密码&#160;:&#160;</string>
+    <string name="mymagic_um_register_compwd_tip">&#160;&#160;请再次填写密码</string>
+    <string name="mymagic_um_register_phone">手&#160;&#160;机&#160;&#160;号&#160;:&#160;</string>
+    <string name="mymagic_um_register_phone_tip">&#160;&#160;获取验证码 </string>
+    <string name="mymagic_um_register_phone_disable">&#160;&#160;60秒后再试 </string>
+    <string name="mymagic_um_register_code">验&#160;&#160;证&#160;&#160;码&#160;:&#160;</string>
+    <string name="mymagic_um_register_code_tip">&#160;&#160;请输入短信验证码</string>
+    <string name="mymagic_cc_order">我要订购</string>
+    <string name="mymagic_cc_order_not_enough">当前余额*元，余额不足，请充值，如需购买充值卡，请拨打优朋影视7x24 小时服务热线400-655-7899或登陆优朋影视官方服务网址：dk.voole.com</string>
+    <string name="mymagic_cc_order_history">消费记录</string>
+    <string name="mymagic_cc_recharge">我要充值</string>
+    <string name="mymagic_cc_recharge_card_hint">如需购买充值卡，请拨打优朋影视7x24 小时服务热线400-655-7899或使用PC登陆优朋影视官方服务网址：dk.voole.com</string>
+    <string name="mymagic_cc_recharge_pwd_wrong">密码有误，请重新输入，如需帮助，请拨打优朋影视7x24 小时服务热线400-655-7899</string>
+    <string name="mymagic_cc_recharge_card_disable">您好，您输入的卡已失效，请重新输入如需帮助，请拨打优朋影视7x24 小时服务热线400-655-7899</string>
+    <string name="mymagic_cc_recharge_card_mismatching">您好，此充值卡不能充值到本台设备，请购买与设备对应的充值卡，如需帮助，请拨打优朋影视7x24 小时服务热线400-655-7899</string>
+     <string name="mymagic_cc_recharge_card_uesed">本卡已被使用，请联系供应商处理，如需帮助，请拨打优朋影视7x24 小时服务热线400-655-7899</string>
+     <string name="mymagic_cc_recharge_pwd_excess_time">密码输入错误次数超过限制次数，请24小时之后再试！请拨打优朋影视7x24 小时服务热线400-655-7899</string>
+    <string name="mymagic_mc_notification">消息通知</string>
+    <string name="mymagic_mc_get_fail">获取消息出错！</string>
+    <string name="mymagic_mc_recharge_aboutmagic">关于优朋</string>
+    <string name="mymagic_mymovie_favorite_empty">没有收藏记录！</string>
+    <string name="mymagic_mymovie_history_empty">没有观看记录！</string>
+    <string name="mymagic_mymovie_pursue_empty">没有追剧记录！</string>
+    <string name="mymagic_mymovie_favorite_clear">您确定要清空我的收藏吗？</string>
+    <string name="mymagic_mymovie_history_clear">您确定要清空观看记录吗？</string>
+    <string name="mymagic_mymovie_pursue_clear">您确定要清空我的追剧吗？</string>
+    <string name="mymagic_mymovie_favorite_get_fail">获取收藏列表出错！</string>
+    <string name="mymagic_mymovie_history_get_fail">获取播放历史列表出错！</string>
+    <string name="mymagic_mymovie_pursue_get_fail">获取追剧列表出错！</string>
+    <string name="mymagic_mymovie_delete">您确定要删除选中的影片吗？</string>
+    <string name="mymagic_net_fail">访问网络出错！</string>
+    <!-- Player -->
+    <string name="player_movie_offline">您好，影片已经下线。</string>
+    <string name="player_movie_confirm_play">确定点播</string>
+    <string name="player_movie_more_discount">更多优惠</string>
+    <string name="player_movie_balance_not_enough">该影片是付费影片，您的余额不足，请充值</string>
+    <string name="player_movie_get_fail">获取影片消费信息时出错，请重试</string>
+    <string name="player_movie_">本片价格为?元，您可以免费预览*分钟。您的余额不足，请及时充值，充值卡购买方式：\n １.请拨打优朋影视7*24小时服务热线400-655-7899；\n ２.登陆优朋影视官网dk.voole.com</string>
+    <string name="player_movie_check_status_0">成功</string>
+    <string name="player_movie_check_status_1">抱歉，此节目暂时无法观看，或已移除，试试其它节目。</string>
+    <string name="player_movie_check_status_2">抱歉，系统出错啦，请稍后再尝试。</string>
+    <string name="player_movie_check_status_3">抱歉，网络出错啦，请检查网络连接是否正常后重试。</string>
+    <string name="player_movie_check_status_4">抱歉，操作超时啦，请稍后再尝试。</string>
+    <string name="player_movie_check_status_101">抱歉，操作超时啦，请稍后再尝试。</string>
+    <string name="player_movie_check_status_102">抱歉，登录认证平台失败，请稍后再尝试。</string>
+    <string name="player_movie_check_status_103">抱歉，您没有订购该产品，请试试其它节目。</string>
+    <string name="player_movie_check_status_105">抱歉，登录认证平台失败，请稍后重试。</string>
+    <string name="player_movie_check_status_106">抱歉，登录认证平台失败，请稍后重试。</string>
+    <string name="player_movie_check_status_112">抱歉，此节目暂时无法观看，或已移除，请试试其它节目。</string>
+    <string name="player_movie_check_status_113">抱歉，当前节目不属于您的订购产品，请试试其它节目。</string>
+    <string name="player_movie_check_status_114">抱歉，余额不足，请您及时支付。</string>
+    <string name="player_movie_check_status_115">抱歉，服务器出错啦，请试试其它节目。</string>
+    <string name="player_movie_check_status_119">抱歉，服务器出错啦，请试试其它节目。</string>
+    <string name="player_movie_check_status_121">抱歉，服务器出错啦，请试试其它节目。</string>
+    <string name="player_movie_check_status_123">抱歉，您已被强制下线，请检查账号是否被滥用，如有疑问，请致电客服。</string>
+    <string name="player_movie_check_status_200">抱歉，您的认证模块未正常工作，请检查认证模块是否在运行，如有疑问，请致电客服。</string>
+    
+    <!-- Topic View -->
+    <string name="topic_zuanti">专题</string>
+    <string name="topic_get_topiclsit_fail">获取专题信息失败</string>
+
+    <!-- ZYFilm View -->
+    <string name="zy_shoucang">收藏</string>
+
+    <!-- Rank View -->
+    <string name="rank_name">影视排行榜</string>
+    
+    
+    <!-- common -->
+    <string name="common_access_net_fail">您好，服务器繁忙，如需帮助请拨打7x24小时客服电话400-655-7899</string>
+    <string name="common_get_data_fail">您好，网络故障，请重试</string>
+    <string name="common_net_error">您好，网络故障，请检查网络</string>
+	<string name="common_ok_button">确定</string>
+	<string name="common_cancel_button">取消</string>
+	<string name="common_reset_button">重置</string>
+	<string name="common_clear_button">清除</string>
+	<string name="common_download_tv">您未安装优朋TV，是否下载？</string>
+</resources>

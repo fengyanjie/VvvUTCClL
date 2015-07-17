@@ -1,0 +1,230 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/mymagic_um_register_username"
+            android:textColor="@android:color/white"
+            android:textSize="26dp" />
+        <!--
+        <com.voole.epg.base.common.InputText
+             android:id="@+id/name_et" 
+            android:layout_margin="5dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+		/>
+        -->
+
+        <com.voole.epg.base.common.MyEditText
+            android:id="@+id/name_et"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mymagic_um_register_username_tip"
+            android:textColor="#585858"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/mymagic_um_register_email"
+            android:textColor="@android:color/white"
+            android:textSize="26dp" />
+
+        <com.voole.epg.base.common.MyEditText
+            android:id="@+id/email_et"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mymagic_um_register_email_tip"
+            android:textColor="#585858"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/mymagic_um_register_pwd"
+            android:textColor="@android:color/white"
+            android:textSize="26dp" />
+
+        <com.voole.epg.base.common.MyEditText
+            android:id="@+id/pwd_et"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mymagic_um_register_pwd_tip"
+            android:textColor="#585858"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/mymagic_um_register_compwd"
+            android:textColor="@android:color/white"
+            android:textSize="26dp" />
+
+        <com.voole.epg.base.common.MyEditText
+            android:id="@+id/compwd_et"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mymagic_um_register_compwd_tip"
+            android:textColor="#585858"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/mymagic_um_register_phone"
+            android:textColor="@android:color/white"
+            android:textSize="26dp" />
+
+        <!--
+         <com.voole.epg.base.common.InputText
+             android:id="@+id/phone_et" 
+            android:layout_margin="5dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+		/>
+        -->
+
+        <com.voole.epg.base.common.MyEditText
+            android:id="@+id/phone_et"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:id="@+id/getCode"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/cs_mymagic_getcode_selector"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/mymagic_um_register_phone_tip"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/mymagic_um_register_code"
+            android:textColor="@android:color/white"
+            android:textSize="26dp" />
+
+        <!--
+         <com.voole.epg.base.common.InputText
+            android:id="@+id/code_et" 
+            android:layout_margin="5dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+		/>
+        -->
+
+        <com.voole.epg.base.common.MyEditText
+            android:id="@+id/code_et"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mymagic_um_register_code_tip"
+            android:textColor="#585858"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+</LinearLayout>

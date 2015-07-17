@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_focused="false" android:drawable="@drawable/cs_recommend_topic_unfocus_bg"></item>
+    <item android:state_focused="true" android:drawable="@drawable/cs_recommend_topic_focus_bg"></item>
+
+</selector>

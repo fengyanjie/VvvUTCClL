@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.voole.epgfor4k"
+    android:versionCode="8"
+    android:versionName="1.0.8" >
+
+    <uses-sdk android:minSdkVersion="15" />
+    
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" /> 
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" 
+        android:name="com.voole.epg.base.LauncherApplication4Tcl"
+        android:screenOrientation="landscape" 
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:largeHeap="true">
+       <!--  <activity android:name="com.voole.epg.base.CooperForTclActivity" android:screenOrientation="landscape"  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> -->
+        <activity android:name="com.voole.epg.view.movies.movie.MovieActivity" 
+            android:configChanges="keyboard|keyboardHidden" android:screenOrientation="landscape" />
+        <activity android:name="com.voole.epg.f4k_download.F4KDownManagerActivity" android:screenOrientation="landscape" />
+        <activity android:name="com.voole.epg.f4k_download.F4KListActivity" android:screenOrientation="landscape" />
+        <activity android:name="com.voole.epg.download.DownManagerActivity" android:screenOrientation="landscape" />
+        <activity android:name="com.voole.epg.download.FilmListActivity" android:screenOrientation="landscape" />
+		
+        <activity android:name="com.voole.epg.cooperation.CooperationStartActivity" 
+            android:launchMode="singleTask" android:screenOrientation="landscape"  android:exported="true"  >
+            <intent-filter>
+                <action android:name="com.voole.epg.action.Channel"/>
+                 <action android:name="com.voole.epg.action.Detail" />
+                 <action android:name="com.voole.epg.F4k" />
+                 
+                <category android:name="android.intent.category.DEFAULT" />
+             </intent-filter>
+        </activity>
+        <activity android:name="com.voole.epg.view.movies.zy.ZYActivity" android:screenOrientation="landscape" />
+        <activity android:name="com.voole.epg.view.movies.zy.ZYFilmListActivity" android:screenOrientation="landscape" />
+        <activity android:name="com.voole.epg.view.movies.zy.ZYPorgramListActivity" android:screenOrientation="landscape" />
+        <activity android:name="com.voole.epg.base.MyMagicActivity" android:screenOrientation="landscape" 
+            android:theme="@style/windowBackground"
+            android:launchMode="singleTask">
+            <intent-filter >
+                <action android:name="com.voole.epg.action.Mymagic_tcl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="com.voole.epg.action.myvoole.comsumer.Recharge_tcl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="com.voole.epg.action.myvoole.comsumer.Order_tcl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="com.voole.epg.action.myvoole.Favorite_tcl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="com.voole.epg.action.myvoole.History_tcl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="com.voole.epg.action.myvoole.Pursue_tcl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="com.voole.epg.action.myvoole.Usermanage_tcl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="com.voole.epg.action.myvoole.Message_tcl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        <activity android:name="com.voole.epg.view.movies.detail.MovieDetailActivity"  android:screenOrientation="landscape" >
+         <!--    <intent-filter >
+                <action android:name="com.voole.epg.action.Detail" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter> -->
+        </activity>
+        <activity android:name="com.voole.epg.view.movies.rank.RankActivity" android:screenOrientation="landscape" />
+       <activity android:name="com.voole.epg.base.CooperForTclActivity" android:icon="@drawable/icon">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+       </activity>
+        <activity android:name="com.voole.epg.view.search.SearchActivity" android:screenOrientation="landscape"
+            android:theme="@style/windowBackground"
+            android:launchMode="singleTask" >
+        	<intent-filter >
+                <action android:name="com.voole.epg.action.Search_tcl" />
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+        </activity>
+          <!-- 
+      <activity android:name="com.voole.epg.view.newsearch.NewSearchActivity" android:screenOrientation="landscape"
+            android:theme="@style/windowBackground"
+            android:launchMode="singleTask" >
+        	<intent-filter >
+                <action android:name="com.voole.epg.action.Search" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        --> 
+        <activity android:name="com.voole.epg.view.movies.zy.ZYProgramListActivity" android:screenOrientation="landscape" />
+        <activity android:name="com.voole.epg.view.movies.live.LiveActivity" android:screenOrientation="landscape" />
+        <activity android:name="com.voole.epg.view.movies.topic.TopicListActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.voole.epg.action.Topic_tcl"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.voole.epg.view.movies.topic.TopicFilmListVerActivity" android:screenOrientation="landscape">
+             <intent-filter>
+                <action android:name="com.voole.epg.action.Topic_Ver_tcl"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.voole.epg.view.movies.topic.TopicFilmListHorActivity" android:screenOrientation="landscape">
+             <intent-filter>
+                <action android:name="com.voole.epg.action.Topic_Hor_tcl"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.voole.epg.player.VoolePlayerActivity" android:screenOrientation="landscape"
+            android:configChanges="keyboard|navigation|keyboardHidden|touchscreen|screenSize"/>
+        
+        <!-- 注册2.0播放库 Activity -->
+        <activity android:name="com.voole.epg.player.standard.VoolePlayActivity" android:screenOrientation="landscape"
+            android:configChanges="keyboard|navigation|keyboardHidden|touchscreen|screenSize"/>
+        <receiver android:name="com.voole.epg.base.common.StartUpReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.voole.epg.cooperation.ControllerReceiver">
+            <intent-filter>
+                <action android:name="epg.vurc.action" />
+            </intent-filter>
+		</receiver>
+		<receiver android:name="com.voole.epg.cooperation.VooleReceiver">
+            <intent-filter>
+                <action android:name="com.voole.epg.action.broadcast.getLetterNum" />
+            </intent-filter>
+		</receiver>
+        <service
+            android:name="com.voole.epg.cooperation.aidl.VooleAIDLservice">
+            <intent-filter >
+                <action android:name="com.voole.epg.cooperation.aidl_tcl"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="android.app.default_searchable"
+                   android:value="com.voole.epg.view.search.SearchActivity" />
+        
+        <provider android:name="com.voole.epg.view.search.VooleSearchProvider"
+	       android:authorities="com.voole.epgfor4k.view.search.VooleSearchProvider"/>
+        
+        
+        <service android:name="com.voole.epg.f4k_download.DownLoadService"></service>
+        <service android:name="com.voole.epg.download.DownLoadService"></service>
+    </application>
+
+</manifest>
